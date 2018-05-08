@@ -1,1 +1,1 @@
-# meta-pi-snake
+# meta-snake
