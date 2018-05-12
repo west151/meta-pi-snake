@@ -13,5 +13,6 @@ BBLAYERS ?= " \
     ${HOME}/yocto-data/poky-rocko/meta-openembedded/meta-networking \
     ${HOME}/yocto-data/poky-rocko/meta-openembedded/meta-python \
     ${HOME}/yocto-data/poky-rocko/meta-raspberrypi \
+    ${HOME}/yocto-data/poky-rocko/meta-qt5 \    
     ${HOME}/yocto-data/poky-rocko/meta-snake \
   "
