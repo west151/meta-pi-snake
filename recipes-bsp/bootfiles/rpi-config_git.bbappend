@@ -16,6 +16,11 @@ do_deploy_append() {
         echo "dtoverlay=pi3-disable-bt" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
     fi
 
+    # disable splash
+    sed -i '/#disable_splash=/ c\disable_splash=1' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+    # enable I2C
+    sed -i '/#dtparam=i2c_arm=/ c\dtparam=i2c_arm=on' ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
+
     echo "dispmanx_offline=1" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
     echo "hdmi_force_hotplug=1" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
     echo "hdmi_group=2" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
