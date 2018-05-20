@@ -6,6 +6,7 @@ require snake-base-image.bb
 
 MODULES_FILES = " \
     modules-files \
+    script-files \
 "
 
 IMAGE_INSTALL += " \
