@@ -6,7 +6,7 @@ cd ~/yocto-data
 git clone -b rocko git://git.yoctoproject.org/poky.git poky
 cd poky
 
-git clone -b master https://github.com/west151/meta-snake
+git clone -b rocko https://github.com/west151/meta-snake
 git clone -b rocko git://git.openembedded.org/meta-openembedded
 git clone -b rocko git://git.yoctoproject.org/meta-raspberrypi
 git clone -b 5.10 git://code.qt.io/yocto/meta-qt5.git
