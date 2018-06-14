@@ -44,6 +44,19 @@ DL_DIR ?= "${TOPDIR}/downloads"
 SSTATE_DIR ?= "${TOPDIR}/sstate-cache"
 TMPDIR = "${TOPDIR}/tmp"
 
+# i2c
+ENABLE_I2C = "1"
+# SPLASH
+DISABLE_SPLASH = "1"
+# WAVESHARE DISPLAY
+WAVESHARE_1024X600_C_2_1 = "1"
+# UART
+ENABLE_UART = "1"
+#
+ENABLE_KGDB = "1"
+#
+DISABLE_RPI_BOOT_LOGO = "1"
+
 #
 # Disk Space Monitoring during the build
 #
