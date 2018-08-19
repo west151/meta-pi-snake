@@ -37,5 +37,5 @@ bitbake snake-base-image
 # WaveShare Compute Module IO Board Plus
 bitbake snake-wboard-image
 
-# SDK
+#  SDK
 bitbake meta-toolchain-qt5
