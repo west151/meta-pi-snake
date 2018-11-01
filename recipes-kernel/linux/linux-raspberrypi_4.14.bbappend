@@ -1,6 +1,6 @@
-LINUX_VERSION = "4.14.71"
+LINUX_VERSION = "4.14.78"
 
-SRCREV = "4f30a5365296658d66ef8a9f878a25d229e2d5fa"
+SRCREV = "af3ff2aed7d3d8991296d882febff75418ab6f83"
 
 RPI_KERNEL_DEVICETREE = " \
     bcm2708-rpi-0-w.dtb \
@@ -48,9 +48,11 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/fe-pi-audio.dtbo \
     overlays/goodix.dtbo \
     overlays/googlevoicehat-soundcard.dtbo \
+    overlays/gpio-fan.dtbo \
     overlays/gpio-ir.dtbo \
     overlays/gpio-ir-tx.dtbo \
     overlays/gpio-key.dtbo \
+    overlays/gpio-no-bank0-irq.dtbo \
     overlays/gpio-no-irq.dtbo \
     overlays/gpio-poweroff.dtbo \
     overlays/gpio-shutdown.dtbo \
@@ -62,6 +64,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/hifiberry-digi-pro.dtbo \
     overlays/hy28a.dtbo \
     overlays/hy28b.dtbo \
+    overlays/hy28b-2017.dtbo \
     overlays/i2c0-bcm2708.dtbo \
     overlays/i2c1-bcm2708.dtbo \
     overlays/i2c-bcm2708.dtbo \
