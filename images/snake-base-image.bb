@@ -137,8 +137,12 @@ QT5_PKGS = " \
     qtxmlpatterns \
     qtserialport \
     qtmqtt \
-    qtwebglplugin \
 "
+
+# QT 5.12
+QT5_PKGS_WEBGL = " \
+    qtwebglplugin \
+" 
 
 QT5_3D_PKGS = " \
     qt3d \
