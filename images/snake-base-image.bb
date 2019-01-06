@@ -204,6 +204,7 @@ IMAGE_INSTALL += " \
     ${QT_TOOLS} \
     ${QT_DEV_TOOLS} \
     ${QT5_PKGS} \
+    ${QT5_PKGS_WEBGL} \
     ${QT5_DEV_PKGS} \
     ${QT5_3D_PKGS} \
     ${QT5_3D_DEV_PKGS} \
