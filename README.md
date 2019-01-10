@@ -4,13 +4,13 @@
 mkdir ~/yocto-data
 cd ~/yocto-data
 
-git clone -b sumo git://git.yoctoproject.org/poky.git poky
+git clone git://git.yoctoproject.org/poky.git poky
 cd poky
 
 git clone -b sumo https://github.com/west151/meta-snake
 git clone -b sumo git://git.openembedded.org/meta-openembedded
 git clone -b sumo git://git.yoctoproject.org/meta-raspberrypi
-git clone -b 5.11 git://code.qt.io/yocto/meta-qt5.git
+git clone -b 5.12 git://code.qt.io/yocto/meta-qt5.git
 
 cd ~/yocto-data
 ~/yocto-data$ mkdir -p snake/build
