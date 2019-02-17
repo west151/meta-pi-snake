@@ -1,6 +1,6 @@
-LINUX_VERSION = "4.14.82"
+LINUX_VERSION = "4.14.98"
 
-SRCREV = "2efa7450a8f408084d40b28cfa3fa75cf488d473"
+SRCREV = "5d63a4595d32a8505590d5fea5c4ec1ca79fd49d"
 
 RPI_KERNEL_DEVICETREE = " \
     bcm2708-rpi-0-w.dtb \
@@ -14,6 +14,7 @@ RPI_KERNEL_DEVICETREE = " \
 "
 
 RPI_KERNEL_DEVICETREE_OVERLAYS = " \
+    overlays/3dlab-nano-player.dtbo \
     overlays/adau1977-adc.dtbo \
     overlays/adau7002-simple.dtbo \
     overlays/ads1015.dtbo \
@@ -32,6 +33,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/audioinjector-addons.dtbo \
     overlays/audioinjector-ultra.dtbo \
     overlays/audioinjector-wm8731-audio.dtbo \
+    overlays/audiosense-pi.dtbo \
     overlays/audremap.dtbo \
     overlays/balena-fin.dtbo \
     overlays/bmp085_i2c-sensor.dtbo \
@@ -90,6 +92,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/mcp2515-can1.dtbo \
     overlays/mcp3008.dtbo \
     overlays/mcp3202.dtbo \
+    overlays/mcp342x.dtbo \
     overlays/media-center.dtbo \
     overlays/midi-uart0.dtbo \
     overlays/midi-uart1.dtbo \
@@ -146,11 +149,13 @@ RPI_KERNEL_DEVICETREE_OVERLAYS = " \
     overlays/spi2-3cs.dtbo \
     overlays/spi-gpio35-39.dtbo \
     overlays/spi-rtc.dtbo \
+    overlays/ssd1306.dtbo \
     overlays/superaudioboard.dtbo \
     overlays/sx150x.dtbo \
     overlays/tc358743-audio.dtbo \
     overlays/tc358743.dtbo \
     overlays/tinylcd35.dtbo \
+    overlays/tpm-slb9670.dtbo \
     overlays/uart0.dtbo \
     overlays/uart1.dtbo \
     overlays/upstream-aux-interrupt.dtbo \
