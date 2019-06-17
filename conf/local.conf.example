@@ -18,7 +18,8 @@ MACHINE_FEATURES_remove = "apm"
 #IMAGE_FSTYPES ?= "tar.xz"
 IMAGE_FSTYPES ?= "tar.bz2 ext3 rpi-sdimg"
 
-PREFERRED_VERSION_linux-raspberrypi = "4.14.%"
+#PREFERRED_VERSION_linux-raspberrypi = "4.14.%"
+PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
 
 # Choose the board you are building for
 #MACHINE="raspberrypi"
@@ -56,6 +57,8 @@ ENABLE_UART = "1"
 ENABLE_KGDB = "1"
 #
 DISABLE_RPI_BOOT_LOGO = "1"
+
+KERNEL_DEVICETREE_remove = "bcm2708-rpi-0-w.dtb"
 
 #
 # Disk Space Monitoring during the build
