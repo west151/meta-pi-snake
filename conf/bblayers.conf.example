@@ -6,13 +6,13 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-    ${HOME}/yocto-data/poky/meta \
-    ${HOME}/yocto-data/poky/meta-poky \
-    ${HOME}/yocto-data/poky/meta-openembedded/meta-oe \
-    ${HOME}/yocto-data/poky/meta-openembedded/meta-multimedia \
-    ${HOME}/yocto-data/poky/meta-openembedded/meta-networking \
-    ${HOME}/yocto-data/poky/meta-openembedded/meta-python \
-    ${HOME}/yocto-data/poky/meta-raspberrypi \
-    ${HOME}/yocto-data/poky/meta-qt5 \    
-    ${HOME}/yocto-data/poky/meta-snake \
+    ${HOME}/yocto-data/raspberry/poky/meta \
+    ${HOME}/yocto-data/raspberry/poky/meta-poky \
+    ${HOME}/yocto-data/raspberry/poky/meta-openembedded/meta-oe \
+    ${HOME}/yocto-data/raspberry/poky/meta-openembedded/meta-multimedia \
+    ${HOME}/yocto-data/raspberry/poky/meta-openembedded/meta-networking \
+    ${HOME}/yocto-data/raspberry/poky/meta-openembedded/meta-python \
+    ${HOME}/yocto-data/raspberry/poky/meta-raspberrypi \
+    ${HOME}/yocto-data/raspberry/poky/meta-qt5 \    
+    ${HOME}/yocto-data/raspberry/poky/meta-snake \
   "

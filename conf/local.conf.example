@@ -30,7 +30,7 @@ PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
 #MACHINE="raspberrypi-cm"
 MACHINE="raspberrypi-cm3"
 
-KERNEL_IMAGETYPE = "Image"
+KERNEL_IMAGETYPE = "zImage"
 
 # passed to make so setting it to “-j X”
 PARALLEL_MAKE ?= "-j 2"
