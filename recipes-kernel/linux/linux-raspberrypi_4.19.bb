@@ -1,6 +1,7 @@
-LINUX_VERSION = "4.19.58"
+LINUX_VERSION = "4.19.65"
 
-SRCREV = "618fb8f1d333fbde5695a8086ca9db15d0e72af2"
+SRCREV = "ea2c11a187c0e248343452846457b94715e04969"
+
 SRC_URI = "git://github.com/raspberrypi/linux.git;branch=rpi-4.19.y"
 
 require linux-rpi.inc
