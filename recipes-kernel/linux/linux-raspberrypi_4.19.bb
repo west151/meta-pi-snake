@@ -1,6 +1,6 @@
-LINUX_VERSION = "4.19.75"
+LINUX_VERSION = "4.19.76"
 
-SRCREV = "6d8bf28fa4b1ca0a35c0cd1dcb267fb216daf720"
+SRCREV = "f161ba5544e3da961d1308eff7e70be517659246"
 
 SRC_URI = "git://github.com/raspberrypi/linux.git;branch=rpi-4.19.y"
 
