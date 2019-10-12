@@ -189,7 +189,6 @@ MQTT_DEV = " \
 "
 
 GPIO = " \
-    wiringpi \
     bcm2835-dev \
 "
 
