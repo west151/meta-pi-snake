@@ -1,5 +1,4 @@
-# Local configuration for meta-snake images
-# This is a sysvinit system
+# Local configuration for meta-snake images This is a sysvinit system
 
 LICENSE_FLAGS_WHITELIST = "commercial"
 
@@ -15,17 +14,18 @@ VIRTUAL-RUNTIME_init_manager = "sysvinit"
 
 MACHINE_FEATURES_remove = "apm"
 
-#IMAGE_FSTYPES ?= "tar.xz"
-IMAGE_FSTYPES ?= "tar.bz2 ext3 rpi-sdimg"
+IMAGE_FSTYPES ?= "rpi-sdimg"
 
 # kernel
 PREFERRED_VERSION_linux-raspberrypi = "4.19.%"
 
 # Choose the board you are building for
-# raspberrypi-cm3
-MACHINE ?= "raspberrypi3"
+MACHINE ?= "raspberrypi-cm3"
 
-KERNEL_IMAGETYPE = "zImage"
+# u-boot
+#RPI_USE_U_BOOT = "1"
+# UART
+ENABLE_UART = "1"
 
 # passed to make so setting it to “-j X”
 PARALLEL_MAKE ?= "-j 2"
@@ -46,10 +46,8 @@ ENABLE_I2C = "1"
 DISABLE_SPLASH = "1"
 # WAVESHARE DISPLAY
 WAVESHARE_1024X600_C_2_1 = "1"
-# UART
-ENABLE_UART = "1"
 #
-ENABLE_KGDB = "1"
+#ENABLE_KGDB = "1"
 #
 DISABLE_RPI_BOOT_LOGO = "1"
 

@@ -1,4 +1,4 @@
-SUMMARY = "Snake base image"
+SUMMARY = "Snake board mini cm3 image"
 HOMEPAGE = "gis1501@gmail.com"
 LICENSE = "MIT"
 
@@ -139,32 +139,20 @@ QT5_PKGS = " \
     qtmqtt \
 "
 
-# QT 5.12
 QT5_PKGS_WEBGL = " \
     qtwebglplugin \
 " 
 
-QT5_3D_PKGS = " \
-    qt3d \
-"
-
-QT5_3D_DEV_PKGS = " \
-    qt3d-dev \
-    qt3d-mkspecs \
-"
-
-QT5_WEBENGINE_PKGS = " \
-    qtwebengine \
-"
-
-QT5_DEV_WEBENGINE_PKGS = " \
-    qtwebengine-dev \
-    qtwebengine-mkspecs \
-"
-
 SDR = " \
     asn1c \
     libfftwf \
+    fftw-dev \
+    libhackrf \
+    rtl-sdr \
+"
+
+GPS = " \
+    pps-tools \
 "
 
 OPENMP = " \
@@ -192,6 +180,11 @@ GPIO = " \
     bcm2835-dev \
 "
 
+MODULES_FILES = " \
+    modules-files \
+    script-files \
+"
+
 IMAGE_INSTALL += " \
     ${TOOLS_INSTALL} \
     ${DEV_SDK_INSTALL} \
@@ -205,15 +198,15 @@ IMAGE_INSTALL += " \
     ${QT5_PKGS} \
     ${QT5_PKGS_WEBGL} \
     ${QT5_DEV_PKGS} \
-    ${QT5_3D_PKGS} \
-    ${QT5_3D_DEV_PKGS} \
     ${SDR} \
     ${OPENMP} \
     ${OPENMP_DEV} \
     ${MQTT} \
     ${MQTT_DEV} \
     ${GPIO} \
+    ${MODULES_FILES} \
+    ${GPS} \
 "
 
-export IMAGE_BASENAME = "snake-base-image"
+export IMAGE_BASENAME = "snake-board-mini-image"
 
